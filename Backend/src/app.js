@@ -1,5 +1,11 @@
 const express = require('express')
 const app = express()
+const session = require('express-session')
+const dbConnection = require('./config/db.connection')
+
+// Database Connection
+
+dbConnection()
 
 // Middlewares
 
